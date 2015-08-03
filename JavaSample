@@ -1,0 +1,2 @@
+int age = tYear – bYear ;
+System.out.println(“Hello “ + firstName + ". You are " + age + " years old");
