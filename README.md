@@ -15,8 +15,10 @@ class Tut1 {
                System.out.println("Please Enter In The Current Year: ");
                String thisYear = bufRead.readLine();
                
+               int age = tYear – bYear ;
+               System.out.println(“Hello “ + firstName + ". You are " + age + " years old");
           }
-          catch (IOException err) {
+          (IOException err) {
                System.out.println("Error reading line");
           }
      }	
