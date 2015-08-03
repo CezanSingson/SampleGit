@@ -10,16 +10,23 @@ class Tut1 {
            {
                System.out.println("Please Enter In Your First Name: ");
                String firstName = bufRead.readLine();
+               
                System.out.println("Please Enter In The Year You Were Born: ");
                String bornYear = bufRead.readLine();
+               
                System.out.println("Please Enter In The Current Year: ");
                String thisYear = bufRead.readLine();
+               
+                int bYear = Integer.parseInt(bornYear);
+                int tYear = Integer.parseInt(thisYear);
                
                int age = tYear – bYear ;
                System.out.println(“Hello “ + firstName + ". You are " + age + " years old");
           }
-          (IOException err) {
+           catch (IOException err) {
                System.out.println("Error reading line");
           }
+           catch(NumberFormatException err) {
+               System.out.println("Error Converting Number");
      }	
 }
